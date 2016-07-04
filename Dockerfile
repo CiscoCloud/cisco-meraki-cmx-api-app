@@ -8,7 +8,8 @@ RUN DEBIAN_FRONTEND=noninteractive gem install sinatra
 RUN DEBIAN_FRONTEND=noninteractive gem install data_mapper
 RUN DEBIAN_FRONTEND=noninteractive gem install dm-sqlite-adapter
 RUN DEBIAN_FRONTEND=noninteractive gem install thin
-RUN DEBIAN_FRONTEND=noninteractive git clone https://github.com/npateriya/cisco-meraki-cmx-api-app.git
+RUN DEBIAN_FRONTEND=noninteractive git clone https://github.com/meraki/cmx-api-app.git
 
 COPY cmx_app_start.sh /cmx-api-app/
+COPY public/index.html /cmx-api-app/public/
 CMD bash /cmx-api-app/cmx_app_start.sh
