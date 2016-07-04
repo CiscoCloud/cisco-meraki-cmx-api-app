@@ -1,12 +1,12 @@
 image: ruby:latest
 git:
-  path: github.com/robertcsapo/cisco-meraki-cmx-api-app
+  path: github.com/npateriya/cisco-meraki-cmx-api-app
 script:
   - echo "build commands"
   - echo "no build command"
   - echo "no test command"
 clone:
-  path: github.com/robertcsapo/cisco-meraki-cmx-api-app
+  path: github.com/npateriya/cisco-meraki-cmx-api-app
 build:
   image: ruby:latest
   commands:
