@@ -1,0 +1,8 @@
+#!/bin/bash
+# Installing python and python3
+DEBIAN_FRONTEND=noninteractive gem install sinatra
+DEBIAN_FRONTEND=noninteractive gem install data_mapper
+DEBIAN_FRONTEND=noninteractive gem install dm-sqlite-adapter
+DEBIAN_FRONTEND=noninteractive gem install thin
+#DEBIAN_FRONTEND=noninteractive git clone https://github.com/meraki/cmx-api-app.git
+
